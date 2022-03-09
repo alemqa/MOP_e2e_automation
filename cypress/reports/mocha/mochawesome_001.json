@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-08T15:01:58.301Z",
+    "end": "2022-02-08T15:02:02.236Z",
+    "duration": 3935,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "869b52b2-62e5-4206-ad96-d9a145c7248f",
+      "title": "",
+      "fullFile": "cypress/integration/2.UserLogin.js",
+      "file": "cypress/integration/2.UserLogin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16757e0e-3be2-470c-a082-30724d5d183c",
+          "title": "User should be able to 'Sign Up'",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the QA-Task page",
+              "fullTitle": "User should be able to 'Sign Up' Visits the QA-Task page",
+              "timedOut": null,
+              "duration": 1328,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(url);\ncy.contains('Welcome ...').should('be.visible');",
+              "err": {},
+              "uuid": "1fcd09b9-3674-4a46-b635-bb1fea30c124",
+              "parentUUID": "16757e0e-3be2-470c-a082-30724d5d183c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on 'Log in' button",
+              "fullTitle": "User should be able to 'Sign Up' Clicks on 'Log in' button",
+              "timedOut": null,
+              "duration": 129,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath('//*[text()=\"Log in\"]').click();\ncy.url().should('eq', 'https://qa-task-web.ministryofprogramming.com/login');",
+              "err": {},
+              "uuid": "8fe9ed21-4988-447b-8aba-fb5fb6721b45",
+              "parentUUID": "16757e0e-3be2-470c-a082-30724d5d183c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enters valid 'Email address'",
+              "fullTitle": "User should be able to 'Sign Up' Enters valid 'Email address'",
+              "timedOut": null,
+              "duration": 478,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#email').clear().type('test@test.com').should(\"have.value\", \"test@test.com\");",
+              "err": {},
+              "uuid": "0f9a07fb-88bd-48f4-adcb-f05f64de42d8",
+              "parentUUID": "16757e0e-3be2-470c-a082-30724d5d183c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enters valid 'Password'",
+              "fullTitle": "User should be able to 'Sign Up' Enters valid 'Password'",
+              "timedOut": null,
+              "duration": 392,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#password').clear().type('Test1234!').should(\"have.value\", \"Test1234!\");",
+              "err": {},
+              "uuid": "99e3947c-f9b9-4525-a60c-2cfdc74427a3",
+              "parentUUID": "16757e0e-3be2-470c-a082-30724d5d183c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicks on 'Sign Up' button to submit the form",
+              "fullTitle": "User should be able to 'Sign Up' Clicks on 'Sign Up' button to submit the form",
+              "timedOut": null,
+              "duration": 96,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-testid=\"login-button\"]').click();",
+              "err": {},
+              "uuid": "4f6bcf0f-0f1e-4478-9f39-7f7dea9e329b",
+              "parentUUID": "16757e0e-3be2-470c-a082-30724d5d183c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1fcd09b9-3674-4a46-b635-bb1fea30c124",
+            "8fe9ed21-4988-447b-8aba-fb5fb6721b45",
+            "0f9a07fb-88bd-48f4-adcb-f05f64de42d8",
+            "99e3947c-f9b9-4525-a60c-2cfdc74427a3",
+            "4f6bcf0f-0f1e-4478-9f39-7f7dea9e329b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2423,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
